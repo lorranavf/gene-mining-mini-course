@@ -8,7 +8,7 @@ sudo apt install ncbi-blast+ -y
 sudo apt install emboss -y
 
 # from repo pip (python store)
-pyenv install 3.9.12
+pyenv install 3.9.12 -y
 pyenv global 3.9.12
 pip install pandas
 pip install biopython
