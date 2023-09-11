@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# from repo apt
+# from repo apt (ubuntu store)
 sudo apt install mafft
 sudo apt install iqtree
 sudo apt install hmmer
 sudo apt install ncbi-blast+
 sudo apt install emboss
 
-# from repo pip
+# from repo pip (python store)
 pip install pandas
 pip install biopython
 pip install pybiolib
