@@ -1,5 +1,19 @@
 #!/bin/bash
 
+# from repo apt (ubuntu store)
+sudo apt install mafft -y
+sudo apt install iqtree -y
+sudo apt install hmmer -y
+sudo apt install ncbi-blast+ -y
+sudo apt install emboss -y
+
+# from repo pip (python store)
+pip install pandas
+pip install biopython
+pip install pybiolib
+pip install cialign
+pip install gdown
+
 # from other sources
 mkdir programs
 cd programs
@@ -18,27 +32,12 @@ pip install signalp6_fast/signalp-6-package/
 SIGNALP_DIR=$(python3 -c "import signalp; import os; print(os.path.dirname(signalp.__file__))" )
 sudo cp -r signalp6_fast/signalp-6-package/models/* $SIGNALP_DIR/model_weights/
 
+cd ..
 rm -r programs
 
-# from repo apt (ubuntu store)
-sudo apt install mafft -y
-sudo apt install iqtree -y
-sudo apt install hmmer -y
-sudo apt install ncbi-blast+ -y
-sudo apt install emboss -y
-
-# from repo pip (python store)
-pyenv install 3.9.12 -y
-pyenv global 3.9.12
-pip install pandas
-pip install biopython
-pip install pybiolib
-pip install cialign
-pip install gdown
+# another settings
 pip install torch torchvision torchaudio
 
-
-# configurações extras
-# pip install torch==2.0.0+cu118 torchvision==0.15.1+cu118 torchtext torchaudio torchdata --extra-index-url https://download.pytorch.org/whl/cu118# /workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning_fabric/utilities/cloud_io.py
+# nano /workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning_fabric/utilities/cloud_io.py
 # editar linha 52
 # return torch.load(f, map_location=torch.device('cpu'))  # type: ignore[arg-type]
