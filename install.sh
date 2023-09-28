@@ -41,3 +41,8 @@ pip install torch torchvision torchaudio
 # nano /workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning_fabric/utilities/cloud_io.py
 # editar linha 52
 # return torch.load(f, map_location=torch.device('cpu'))  # type: ignore[arg-type]
+
+# docker 
+# https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script
+# curl -fsSL https://get.docker.com -o get-docker.sh
+# sudo sh get-docker.sh
