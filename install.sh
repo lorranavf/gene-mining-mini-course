@@ -35,6 +35,8 @@ pip install biopython
 pip install pybiolib
 pip install cialign
 pip install gdown
+
+# configurações extras
 # pip install torch==2.0.0+cu118 torchvision==0.15.1+cu118 torchtext torchaudio torchdata --extra-index-url https://download.pytorch.org/whl/cu118# /workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning_fabric/utilities/cloud_io.py
 # editar linha 52
 # return torch.load(f, map_location=torch.device('cpu'))  # type: ignore[arg-type]
